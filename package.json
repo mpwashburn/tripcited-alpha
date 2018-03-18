@@ -1,0 +1,39 @@
+{
+  "name": "tripcited.com",
+  "version": "1.0.0-alpha",
+  "description": "A travel app that uses the power of your social connections to search, plan, interact, book and execute your travel plans.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com"
+  },
+  "keywords": [
+    "travel",
+    "social",
+    "trip",
+    "hike",
+    "explore",
+    "wander",
+    "sojourn",
+    "discover",
+    "wander",
+    "plan",
+    "travel-agent",
+    "flights",
+    "tours",
+    "hotel",
+    "rentals",
+    "car-rental",
+    "cruise",
+    "camp"
+  ],
+  "author": "Michael Washburn <michael@tripcited.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.10"
+  }
+}
