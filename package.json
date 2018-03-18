@@ -33,7 +33,9 @@
   "author": "Michael Washburn <michael@tripcited.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.16.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "mongoose": "^5.0.10",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
