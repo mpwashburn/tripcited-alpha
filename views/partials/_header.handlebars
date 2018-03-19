@@ -1,0 +1,12 @@
+<nav>
+    <ul class="top-nav">
+      <li class="nav-brand"><a href="/trips"><i><h1>Tripcited!</h1></i></a></li>
+      <li class="nav-search"><input type="text" placeholder="search"></li>
+      {{#if user}}
+        <li class="nav-login"><a href="/settings"><i class="fas fa-cog"></i></i></a></li>
+      {{else}}
+        <li class="nav-login"><a href="/login">Login / Sign-up</a></li>
+      {{/if}}
+
+    </ul>
+  </nav>

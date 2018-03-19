@@ -1,4 +1,6 @@
 const express = require('express');
+const path = require('path');
+const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const passport = require('passport');
@@ -26,6 +28,11 @@ mongoose.connect(keys.mongoURI)
 
 const app = express();
 
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars')
+
 app.use(session({
   secret: 'secret',
   resave: false,
@@ -42,8 +49,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Set Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Use Routes
-app.use('/index', index);
+app.use('/', index);
 app.use('/auth', auth);
 
 

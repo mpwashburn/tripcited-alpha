@@ -9,7 +9,7 @@ router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/' }),
   (req, res) => {
     // Successful authentication, redirect home.
-    res.redirect('/dashboard');
+    res.redirect('/');
   });
 
 router.get('/verify', (req, res) => {
@@ -19,6 +19,10 @@ router.get('/verify', (req, res) => {
     console.log('Not Authorized');
   }
 });
+
+// router.get('/sign-in', (req, res) => {
+//   res.render('auth/sign-in');
+// });
 
 router.get('/logout', (req, res) => {
   req.logout();
