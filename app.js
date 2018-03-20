@@ -45,8 +45,8 @@ app.use(passport.session());
 
 // Set Global Variables
 app.use((req, res, next) => {
-  res.locals.user = req.user || null;
-  next();
+res.locals.user = req.user || null;
+next();
 });
 
 // Set Static Folder
@@ -63,4 +63,3 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`app started on port ${port}`);
 });
-

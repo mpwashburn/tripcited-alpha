@@ -1,12 +1,19 @@
 /*Black #0d243b*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html, body {
+
+html, body, .page {
   height: 100%;
 }
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 a {
   text-decoration: none;
   color: #0d243b;
@@ -233,41 +240,104 @@ nav{
 }
 
 /******************************/
-/* Main Container */
+/* Bottom Navigation */
+/******************************/
+  .btm-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #9b9898;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#cccccc;
+  }
+
+  .btm-nav>ul>li{
+    list-style: none;
+  }
+
+/******************************/
+/* Containers and Wraps */
 /******************************/
 
 .main-container {
   display: flex;
   flex-direction: row;
-  max-width: 400px;
-  max-height: 100%;
+  max-width: 1200px;
   margin:auto;
+  padding: 0 10px;
+}
+
+.signin-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+}
+
+.input-field>input {
+  width: 220px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 2px 0;
+  font-size: 12px;
 }
 
 /******************************/
 /* Components */
 /******************************/
 
-.g-btn {
-
+.google-btn {
+  background-color: #db3236;
+  border: none;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.btm-nav{
-  border-top: 1px solid #9b9898;
-  overflow: hidden;
-  position: fixed;
-  bottom: -16px;
-  width: 100%;
-  background-color:#cccccc;
+.facebook-btn {
+  background-color: #3b5998;
+  border: none;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-.btm-nav>ul>li{
-  list-style: none;
+
+.signin-btn {
+  padding: 5px;
+  width: 232px;
+  height: 30px;
+  border: 2px solid #ff8422;
+  color: #302f2f;
+}
+
+.logout-btn {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .card{
   border: 1px solid #9b9898; /*Temporary*/
   padding: 10px;
-  max-width: 400px;
+  width: 400px;
   margin: auto;
   background-color: #f6f7f8;
   margin-bottom: 8px;
@@ -493,5 +563,3 @@ nav{
 .email-input{
   width:200px;
 }
-
-
