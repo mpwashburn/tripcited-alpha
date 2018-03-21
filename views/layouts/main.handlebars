@@ -14,17 +14,11 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
+ <div id="page">
     {{>_header}}
     <div class="main-container">
       {{{body}}}
     </div>
-
-
-    <ul class="flex-container btm-nav">
-      <li class="col"><a href="#home">Home</a></li>
-      <li class="col"><a href="#home"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a></li>
-      <li class="col"><a href="#home">Home</a></li>
-    </ul>
-
+    {{>_bottom-nav}}
+  </div>
 </body>

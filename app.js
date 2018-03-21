@@ -14,6 +14,7 @@ require('./config/passport')(passport);
 // Load Routes
 const index = require('./routes/index');
 const auth = require('./routes/auth');
+const trips = require('./routes/trips');
 
 // Load Keys
 const keys = require('./config/keys');
@@ -55,6 +56,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Use Routes
 app.use('/', index);
 app.use('/auth', auth);
+app.use('/trips', trips);
 
 
 
