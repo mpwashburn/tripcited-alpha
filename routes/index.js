@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const {ensureAuthenticated, ensureGuest} = require('../helpers/auth');
 
-router.get('/', (req, res) => {
+router.get('/',ensureGuest, (req, res) => {
   res.render('index/landing');
 });
 
@@ -9,7 +10,7 @@ router.get('/style-guide', (req, res) => {
   res.render('index/style-guide');
 });
 
-router.get('/dashboard', (req, res) => {
+router.get('/dashboard',ensureAuthenticated, (req, res) => {
   res.render('index/dashboard');
 });
 

@@ -1,1 +1,42 @@
-<h1>add</h1>
+<div class="flex-col trip-container">
+  <div class="col"><h3>Add a trip</h3></div>
+  <div>
+    <form action="/trips" method="POST" class="col">
+        <div class="col input-field">
+          <label for="title"></label>
+          <input type="text" id="title" name="title" placeholder="Trip Title">
+        </div>
+        <div class="col input-field">
+          <label for="destination"></label>
+          <input type="text" id="destination" name="destination" placeholder="Destination">
+        </div>
+        <div class="col input-field">
+          <label for="dates"></label>
+          <input type="text" id="dates" name="dates" placeholder="Dates">
+        </div>
+        <div class="col input-field">
+          <label for="description">Description</label>
+          <textarea type="text" id="description" name="description" placeholder=""></textarea>
+        </div>
+        <div class="col input-field">
+          <label for="visibility">Visiblity</label>
+          <select name="visiblity" id="visiblity">
+            <option value="public" selected>Public</option>
+            <option value="private">Private</option>
+          </select>
+        </div>
+        <div class="col input-field">
+          <button type="submit" class="save-btn">Save</button>
+        </div>
+    </form>
+  </div>
+  <div class="">
+
+      <ul id="trip-card" class="trip-card-select flex-container" onclick="tripCardSelection(event)">
+        <li id="flight" class="trip-card-type" onclick="">Flight</li>
+        <li id="restaurant" class="trip-card-type">Restaurant</li>
+        <li id="place" class="trip-card-type">Place</li>
+      </ul>
+
+  </div>
+</div>

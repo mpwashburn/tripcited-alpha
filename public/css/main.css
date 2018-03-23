@@ -13,10 +13,16 @@
 html, body {
   height: 100%;
 }
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 /******************************/
 /* Typography */
@@ -400,7 +406,6 @@ nav{
   flex-direction: row;
   max-width: 1200px;
   margin:auto;
-  padding: 0 10px;
 }
 
 .signin-wrap {
@@ -411,11 +416,30 @@ nav{
 }
 
 .input-field>input {
-  width: 220px;
-  border: 1px solid grey;
-  padding: 5px;
-  margin: 2px 0;
-  font-size: 12px;
+  width: 330px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #0d243b;
+  font-size: 100%;
+}
+
+.input-field>select{
+  width:330px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #0d243b;
+  font-size: 100%;
+  background: transparent;
+}
+
+.input-field>textarea {
+  width:330px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #0d243b;
 }
 
 /******************************/
@@ -614,6 +638,17 @@ nav{
   text-decoration: none;
 }
 
+.save-btn{
+  width: auto;
+  height: auto;
+  padding: 7px;
+  font-size: 20px;
+  background-color: #858585;
+  text-align: center;
+  border-radius: 0;
+  color; white;
+}
+
 .comment-content{
   flex-wrap: wrap;
 }
@@ -695,4 +730,10 @@ nav{
 
 .email-input{
   width:200px;
+}
+
+.trip-card-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
