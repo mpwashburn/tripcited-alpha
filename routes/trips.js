@@ -38,6 +38,7 @@ router.post('/', (req, res) => {
     title: req.body.title,
     destination: req.body.destination,
     dates: req.body.dates,
+    titleBkgrndImg: req.body.titleBkgrndImg,
     description: req.body.description,
     visiblity: req.body.visiblity,
     user: req.user.id

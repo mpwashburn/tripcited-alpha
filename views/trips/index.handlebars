@@ -1,7 +1,28 @@
-<h1>Trips Index</h1>
-
 {{#each trips}}
-<h1>{{title}}</h1>
+<div class="card trip-header-wrap">
+  <div class="title-image">
+    <img class="img-fluid" src="{{titleBkgrndImg}}" alt="">
+  </div>
+  <div class="col">
+    <h2>{{title}}</h2>
+    <h3>{{destination}}</h3>
+  </div>
+  <div class="col">
+    <div class="_50">
+      <h3>{{dates}}</h3>
+    </div>
+    <div class="_50 trip-friends text-center">
+      <p>With...</p>
+      <div>
+        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/beau_murrillo.jpg" class="" alt="Tripcited Beau Murrillo">
+        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/dana_comella.jpg" class="" alt="Tripcited Dana Comella">
+        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/josie.jpg" class="" alt="Tripcited Colombia_Gorgeous">
+      </div>
+    </div>
+  </div>
+</div> <!-- Close Trip Title Card -->
 {{else}}
-<h3>No public trips</h3>
+<div class="card trip-header flex-container">
+  <h2>No Trips to show</h2>
+</div>
 {{/each}}

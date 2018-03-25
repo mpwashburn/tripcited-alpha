@@ -7,21 +7,26 @@ const TripSchema = new Schema ({
     required: true
   },
   destination: {
-    type:String,
-    required:true
+    type:String
   },
   dates: {
-    type: String,
+    type: String
+  },
+  titleBkgrndImg: {
+    type:String
   },
   description: {
-    type: String,
+    type: String
   },
   visiblity: {
-    type: String,
+    type: String
   },
   createDate:{
     type:Date,
     default: Date.now()
+  },
+  name: {
+    type: String
   }
 });
 
