@@ -1,28 +1,29 @@
-{{#each trips}}
-<div class="card trip-header-wrap">
-  <div class="title-image">
-    <img class="img-fluid" src="{{titleBkgrndImg}}" alt="">
-  </div>
-  <div class="col">
-    <h2>{{title}}</h2>
-    <h3>{{destination}}</h3>
-  </div>
-  <div class="col">
-    <div class="_50">
-      <h3>{{dates}}</h3>
-    </div>
-    <div class="_50 trip-friends text-center">
-      <p>With...</p>
-      <div>
-        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/beau_murrillo.jpg" class="" alt="Tripcited Beau Murrillo">
-        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/dana_comella.jpg" class="" alt="Tripcited Dana Comella">
-        <img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/michaelwashburn/trip-friends/josie.jpg" class="" alt="Tripcited Colombia_Gorgeous">
+
+<div class="row">
+  {{#each trips}}
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{titleBkgrndImg}}">
+        <span class="card-title">{{title}}</span>
+      </div>
+      <div class="card-content flex-row p15">
+        <div class="col s3">
+          <a href="#"><img src="https://s3.us-east-2.amazonaws.com/tripcited-mockup-images/profile-img/michaelw.jpg" class="user-profile-img circle" alt="Michael Washburn"></a>
+        </div>
+        <div class="col s6 flex-col username left-align">
+            <span>@michaelwashburn</span>
+            <span>Los Angeles, CA</span>
+        </div>
+        <div class="col s3 card-fav-add">
+          <i class="material-icons">favorite_border</i>
+          <i class="material-icons">add</i>
+        </div>
+        <div class="col s12 center-align">
+          <a href="">View</a>
+        </div>
       </div>
     </div>
   </div>
-</div> <!-- Close Trip Title Card -->
-{{else}}
-<div class="card trip-header flex-container">
-  <h2>No Trips to show</h2>
+  {{/each}}
 </div>
-{{/each}}

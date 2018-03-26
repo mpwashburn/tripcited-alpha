@@ -1,6 +1,6 @@
-html {
-  height: 100%;
-  min-height: 100%;
+html, body {
+  height:100%;
+  min-height:100%;
   overflow: hidden;
 }
 
@@ -9,10 +9,125 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto;
+.StickyHeader, .StickyFooter {
+  flex: 0 0 auto;
 }
 
-.sticy-header, .sticky-footer{
-  flex: 1 0 auto;
+.StickyContent {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.p15 {
+  padding:15px!important;
+}
+
+footer>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer>ul>li{
+  flex-basis:15%;
+}
+
+.trip-card {
+  background: transparent;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-img-header{
+  min-height: 183px;
+}
+
+.trip-header-img {
+  z-index: -1;
+  position: absolute;
+}
+
+.card-fav-add {
+  display: inherit;
+  align-self: center;
+}
+.card-fav-add i {
+  padding: 0 3px;
+}
+
+.trip-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
+}
+.trip-title {
+  margin-top: 20px !important;
+  text-align: center;
+}
+.user-info-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top:50px;
+  padding: 2px 0px 10px 10px !important;
+  font-size: .825rem;
+}
+
+.user-profile-img-wrap{
+  flex-basis: 15%;
+}
+
+.user-profile-img{
+  border: 2px solid silver;
+  width: 55px;
+  height:auto;
+}
+
+.user-profile-img-wrap>a {
+  margin:0 !important;
+}
+
+
+
+.username>span{
+  display: inherit;
+}
+
+.user-read-more {
+  align-self: flex-end;
+  flex-basis: 15%;
+  text-align: right;
+}
+
+.user-read-more>a{
+  margin:0 !important;
+}
+
+.user-info>span{
+  margin-top:24px;
+  font-size: .825rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .trip-title {
+    margin-top:24px!important;
+  }
+
+  .user-info-wrap{
+    margin-top: 36px;
+  }
 }

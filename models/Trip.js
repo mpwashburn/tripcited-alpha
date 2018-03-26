@@ -18,7 +18,7 @@ const TripSchema = new Schema ({
   description: {
     type: String
   },
-  visiblity: {
+  visibility: {
     type: String
   },
   createDate:{

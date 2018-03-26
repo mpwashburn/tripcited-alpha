@@ -1,40 +1,42 @@
-<div class="flex-col trip-container">
-  <div class="col"><h3>Add a trip</h3></div>
-  <div>
-    <form action="/trips" method="POST" class="col">
-        <div class="col input-field">
-          <label for="title"></label>
+
+    <div class="row">
+      <div class="col s12">
+        <h3>Add a trip</h3>
+      </div>
+      <form action="/trips" method="POST" class="col s12">
+        <div class="input-field col s12">
           <input type="text" id="title" name="title" placeholder="Trip Title">
+          <label for="title"></label>
         </div>
-        <div class="col input-field">
-          <label for="destination"></label>
+        <div class="input-field col s12">
           <input type="text" id="destination" name="destination" placeholder="Destination">
+          <label for="destination"></label>
         </div>
-        <div class="col input-field">
-          <label for="dates"></label>
+        <div class="input-field col s12">
           <input type="text" id="dates" name="dates" placeholder="Dates">
+          <label for="dates"></label>
         </div>
-        <div class="col input-field">
-          <label for="titleBkgrndImg"></label>
+        <div class="input-field col s12">
           <input type="text" id="titleBkgrndImg" name="titleBkgrndImg" placeholder="Image">
+          <label for="titleBkgrndImg"></label>
         </div>
-        <div class="col input-field">
-          <label for="description">Description</label>
-          <textarea type="text" id="description" name="description" placeholder=""></textarea>
+        <div class="input-field col s12">
+          <textarea type="text" id="description" name="description" placeholder="Trip description"></textarea>
+          <label for="description"></label>
         </div>
-        <div class="col input-field">
-          <label for="visibility">Visiblity</label>
-          <select name="visiblity" id="visiblity">
+        <div class="input-field col s12">
+          <select id="visibility" class="" name="">
             <option value="public" selected>Public</option>
             <option value="private">Private</option>
           </select>
         </div>
-        <div class="col input-field">
-          <button type="submit" class="save-btn">Save</button>
+        <div class="input-field col s12">
+          <input type="submit" name="" class="btn" value="save">
         </div>
-    </form>
+      </form>
+    </div>
   </div>
-  <div class="">
+  <!-- <div class="">
 
       <ul id="trip-card" class="trip-card-select flex-container" onclick="tripCardSelection(event)">
         <li id="flight" class="trip-card-type" onclick="">Flight</li>
@@ -42,5 +44,5 @@
         <li id="place" class="trip-card-type">Place</li>
       </ul>
 
-  </div>
+  </div> -->
 </div>

@@ -8,7 +8,7 @@ const {ensureAuthenticated, ensureGuest} = require('../helpers/auth');
 
 // Trips Index
 router.get('/', (req, res) => {
-  Trip.find({visiblity:'public'})
+  Trip.find({visibility:'public'})
   .then(trips => {
     res.render('trips/index', {
       trips:trips
@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
     dates: req.body.dates,
     titleBkgrndImg: req.body.titleBkgrndImg,
     description: req.body.description,
-    visiblity: req.body.visiblity,
+    visibility: req.body.visibility,
     user: req.user.id
   }
   // Create Trip
