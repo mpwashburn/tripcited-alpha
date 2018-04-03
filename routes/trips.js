@@ -31,6 +31,16 @@ router.get('/show', (req, res) => {
   res.render('trips/show');
 });
 
+// Template Views TEMPORARY!!!!!
+
+router.get('/michael-1', (req, res) => {
+  res.render('trips/michael-1');
+});
+
+router.get('/david-1', (req, res) => {
+  res.render('trips/david-1');
+});
+
 // Process New Trip Itinerary
 
 router.post('/', (req, res) => {

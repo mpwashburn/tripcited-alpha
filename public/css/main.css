@@ -1,7 +1,7 @@
 /*Black #0d243b*/
 /* Import Google Font Lato */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,500,700');
-
+/*
 * {
   box-sizing: border-box;
   margin: 0;
@@ -151,7 +151,7 @@ blockquote {
     line-height: 1.45833333;
     /* 35px / 24px */
   }
-}
+} */
 
 
 /* p {
@@ -267,7 +267,7 @@ aside{
   margin-top:5px;
 }
 
-.col,._10,._15,._20,._25,._30,._35,._50,._55,._60,._75,._85 {
+.col,._10,._15,._20,._25,._30,._35,._40,._45,._50,._55,._60,._75,._85 {
   margin: 2.5px;
   padding: 5px;
 }
@@ -298,6 +298,10 @@ aside{
 
 ._40{
   flex-basis: 40%;
+}
+
+._45{
+  flex-basis: 45%;
 }
 
 ._50 {
@@ -490,14 +494,14 @@ nav{
   cursor: pointer;
 }
 
-.card{
-  border: 1px solid #9b9898; /*Temporary*/
+/* .card{
+  border: 1px solid #9b9898;
   padding: 10px;
   width: 400px;
   margin: auto;
   background-color: transparent;
   margin-bottom: 8px;
-}
+} */
 
 .card-sponsor {
   border: 1px solid #9b9898; /*Temporary*/
@@ -547,6 +551,11 @@ nav{
   margin:5px;
 }
 
+.travel-stats>div>span {
+  font-size: 0.625rem;
+  display: inherit;
+}
+
 .trip-header-wrap{
   display: flex;
   flex-flow: row nowrap;
@@ -556,7 +565,22 @@ nav{
   text-align: right;
 }
 
+.follow-btn{
+  width: 130px;
+  padding-top: 2px;
+  display: block;
+  font-size: .815rem;
+  border: 2px solid #ff8422;
+  background: transparent;
+  height: 27px;
+  text-decoration: none;
+  color: #302f2f;
+  margin: auto;
+}
+
 .add-btn {
+  display: block;
+  width
   font-size:8px;
   border: 2px solid #ff8422;
   background:transparent;

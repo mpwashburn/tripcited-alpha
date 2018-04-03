@@ -7,6 +7,32 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background: rgba(73,155,234,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(76,84,177,1) 63%, rgba(77,43,144,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(63%, rgba(76,84,177,1)), color-stop(100%, rgba(77,43,144,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(76,84,177,1) 63%, rgba(77,43,144,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(76,84,177,1) 63%, rgba(77,43,144,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(76,84,177,1) 63%, rgba(77,43,144,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(76,84,177,1) 63%, rgba(77,43,144,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#4d2b90', GradientType=1 );
+}
+
+nav, .page-footer {
+  background: transparent;
+}
+
+span {
+  display: inherit;
+  font-size: .815rem;
+}
+
+p {
+  font-size: .815rem;
+}
+
+.card {
+  max-width: 400px;
+  margin:auto;
 }
 
 .StickyHeader, .StickyFooter {
@@ -16,6 +42,7 @@ body {
 .StickyContent {
   flex: 1 1 auto;
   overflow-y: scroll;
+  padding-bottom: 20px;
 }
 
 .flex-row {
@@ -26,6 +53,232 @@ body {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+._10,._15,._20,._25,._30,._35,._40,._45,._50,._55,._60,._65,._70,._75,._85,._90 {
+  margin: 2.5px;
+  padding: 5px;
+}
+
+._10{
+  flex-basis: 10%;
+}
+
+._15 {
+  flex-basis: 15%;
+}
+
+._20 {
+  flex-basis: 20%;
+}
+
+._25 {
+  flex-basis: 25%;
+}
+
+._30 {
+  flex-basis: 30%;
+}
+
+._35{
+  flex-basis: 35%;
+}
+
+._40{
+  flex-basis: 40%;
+}
+
+._45{
+  flex-basis: 45%;
+}
+
+._50 {
+  flex-basis: 50%;
+}
+
+._55 {
+  flex-basis: 55%;
+}
+
+._60 {
+  flex-basis: 60%;
+}
+
+._65 {
+  flex-basis: 65%;
+}
+
+._70 {
+  flex-basis: 70%;
+}
+
+._75 {
+  flex-basis: 75%;
+}
+
+._85 {
+  flex-basis: 85%;
+}
+
+._90 {
+  flex-basis: 90%;
+}
+
+.wt500 {
+  font-weight: 500;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.itin-icon {
+  width: 25px;
+  height: auto;
+}
+
+.itin-icon-sm {
+  width:20px;
+  height: auto;
+}
+
+.itin-icon-xs {
+  width:12px;
+  margin: 2px;
+}
+
+.thumbs-item {
+  align-self: center;
+  margin:auto;
+}
+.thumbs-item span{
+  font-size: 8px;
+}
+
+.profile-card, .trip-card-1 {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 400px;
+  font-size: 0.8125rem;
+  padding: 15px !important;
+}
+
+.profile-name{
+  font-size: 0.8125rem;
+  display: inherit;
+}
+
+.place-panel, .tip-panel, .flight-panel, .single-comment {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-panel{
+  display: flex;
+  flex-direction: column;
+}
+
+.vote>span{
+  font-size: 12px;
+  display: inline-block;
+}
+
+.panel-title{
+  font-size: .815rem
+}
+
+.comment-panel, .tip-panel{
+  background: #fafafa;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.follow-btn{
+  width: 100%;
+  padding-top: 2px;
+  display: block;
+  font-size: .815rem;
+  border: 2px solid #ff8422;
+  background: transparent;
+  text-decoration: none;
+  color: #302f2f;
+  margin: auto;
+  text-align: center;
+}
+
+.follow-btn, .more-btn{
+  width: 100%;
+  padding-top: 2px;
+  display: block;
+  font-size: .815rem;
+  border: 2px solid #ff8422;
+  background: transparent;
+  text-decoration: none;
+  color: #302f2f;
+  margin: auto;
+  text-align: center;
+}
+
+.more-btn {
+  margin-top: 10px;
+}
+.add-btn {
+  display: block;
+  width
+  font-size:8px;
+  border: 2px solid #ff8422;
+  background:transparent;
+  height: 20px;
+  text-decoration: none;
+  color: #302f2f;
+
+  text-align: center;
+  font-size: 10px;
+}
+
+.ig-feed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ig-img{
+  width:50px;
+  height:50px;
+  margin:2px;
+}
+
+.comment-profile-img{
+  border-radius: 100%;
+  border: 2px solid silver;
+  width: 35px;
+  height:auto;
+}
+
+.social-icon{
+  width: 15px;
+  height: auto;
+}
+
+.travel-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.travel-stats>div{
+  margin:5px;
+}
+
+.travel-stats>div>span {
+  font-size: 0.625rem;
+  display: inherit;
 }
 
 .p15 {
@@ -42,21 +295,29 @@ footer>ul>li{
   flex-basis:15%;
 }
 
-.trip-card {
-  background: transparent;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
 
 .card-img-header{
   min-height: 183px;
 }
 
+.trip-header-wrap{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .trip-header-img {
   z-index: -1;
   position: absolute;
+}
+
+.trip-friends img {
+  border-radius: 100%;
+  border: 2px solid silver;
+  width: 20px;
+}
+
+.trip-friends p{
+  font-weight: 700;
 }
 
 .card-fav-add {
@@ -94,6 +355,12 @@ footer>ul>li{
 .user-profile-img{
   border: 2px solid silver;
   width: 55px;
+  height:auto;
+}
+
+.user-profile-img-sm {
+  border: 2px solid silver;
+  width: 35px;
   height:auto;
 }
 
