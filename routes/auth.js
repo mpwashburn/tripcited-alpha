@@ -8,7 +8,7 @@ router.get('/google', passport.authenticate('google',
 router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/' }),
   (req, res) => {
-    // Successful authentication, redirect home.
+    req.flash('success_msg', 'You have successfully logged in');
     res.redirect('/trips/add');
   });
 
