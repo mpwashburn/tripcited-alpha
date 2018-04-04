@@ -25,4 +25,16 @@ router.get('/logout', (req, res) => {
  res.redirect('/');
 });
 
+// Local Strategy
+
+router.get('/register', (req, res) => {
+  res.render('auth/register');
+});
+
+router.post('/register', (req, res) => {
+  console.log(req.body);
+  res.send('register');
+});
+
+
 module.exports = router;
