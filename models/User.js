@@ -3,14 +3,18 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const UserSchema = new Schema({
-  local: {
-        name: String,
-        email: String,
-        password: String,
-        date: {
-          type: Date,
-          default: Date.now
-    }
+  name: {
+    type: String
+  },
+  email: {
+    type: String,
+  },
+  password:{
+    type: String
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 
   // googleID:{

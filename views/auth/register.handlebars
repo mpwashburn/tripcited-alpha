@@ -1,34 +1,32 @@
-<form action="/auth/register" method="post">
-  <div class="row">
-    <div class="input-field col s12">
-      <input id="name" type="text" name="">
-      <label for="name">Name</label>
-    </div>
-    <div class="input-field col s12">
-      <input id="email" type="email" name="email" class="validate">
-      <label for="email">Email</label>
-    </div>
-    <div class="input-field col s12">
-      <input id="password" type="password" name="password" class="validate">
-      <label for="password">Password</label>
-    </div>
-    <div class="input-field col s12">
-      <input id="password2" type="password" name="password2" class="validate">
-      <label for="password2">Confirm Password</label>
-    </div>
-    <div class="input-field">
-      <a class="waves-effect waves-light btn orange darken-1">Register</a>
-    </div>
-  </div>
-</form>
-
-<!-- <div class="row">
+<div class="row">
   <div class="col s12">
     <div class="card">
       <div class="card-content">
-        <h6>Register</h6>
-
+        <form action="/auth/register" method="post">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" name="name" value="{{name}}" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="email" type="email" name="email" class="validate" value="{{email}}" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" name="password" class="validate" value="{{password}}" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password2" type="password" name="password2" class="validate" value="{{password2}}" required>
+              <label for="password2">Confirm Password</label>
+            </div>
+              <div class="center-align">
+                <!-- <button type="submit" class="waves-effect waves-light btn orange darken-1"></button> -->
+                <input type="submit" class="waves-effect waves-light btn orange darken-1">
+              </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-</div> -->
+</div>

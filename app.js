@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 const session = require('express-session');
 const passport = require('passport');
 
