@@ -18,9 +18,5 @@ router.get('/settings', (req, res) => {
   res.render('index/settings');
 });
 
-router.get('/sign-in', (req, res) => {
-  res.render('index/sign-in');
-});
-
 
 module.exports = router;

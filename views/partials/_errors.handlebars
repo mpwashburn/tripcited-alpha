@@ -1,3 +1,9 @@
+{{#if error}}
+<div class="card-panel">
+  <span class="red-text">{{error}}</span>
+</div>
+{{/if}}
+
 {{#each errors}}
 <div class="card-panel">
   <span class="red-text">{{text}}</span>

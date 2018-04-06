@@ -8,19 +8,17 @@
       <div class="divider"></div>
       <div class="card-content">
         <h6>Email</h6>
-        <form action="">
+        <form action="/auth/login" method="post">
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" name="email" class="" required>
               <label for="email">Email</label>
             </div>
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="text" name="password" class="">
               <label for="password">Password</label>
             </div>
-            <div class="input-field">
-              <a class="waves-effect waves-light btn orange darken-1">Login</a>
-            </div>
+              <input type="submit" class="waves-effect waves-light btn orange darken-1">
           </div>
         </form>
       </div>

@@ -26,13 +26,20 @@ router.get('/verify', (req, res) => {
   }
 });
 
-router.get('/logout', (req, res) => {
- req.logout();
- res.redirect('/');
+// Local Strategy
+router.get('/login', (req, res) => {
+  res.render('auth/login');
 });
 
-// Local Strategy
+router.post('/login', (req, res, next) => {
+  passport.authenticate('local', {
+    successRedirect: '/trips',
+    failureRedirect: '/auth/login',
+    failureFlash: true
+  })(req, res, next);
+});
 
+// Register New User
 router.get('/register', (req, res) => {
   res.render('auth/register');
 });
@@ -86,6 +93,13 @@ router.post('/register', (req, res) => {
         }
       });
   }
+});
+
+// Logout User
+router.get('/logout', (req, res) => {
+ req.logout();
+ req.flash('success_msg', "You are logged out.")
+ res.redirect('/');
 });
 
 
